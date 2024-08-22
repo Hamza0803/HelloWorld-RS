@@ -21,7 +21,7 @@ const Signup = () => {
 
       // Store the JWT and navigate to home page
       localStorage.setItem('jwt', response.data.jwt);
-      navigate('/home');
+      navigate('/create-message');
     } catch (err) {
       setError('Signup failed. Please try again.');
       console.error('Signup error:', err);
